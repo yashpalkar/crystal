@@ -127,13 +127,31 @@ header {
 
 
 /* responsive start here======================================= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1115px) {
+  .navbar-collapse {
+    width: 70%;
+  }
+  .nav-item a {
+    font-size: 12px;
+    }
+}
+/* @media screen and (max-width: 1024px) {
+  .navbar-collapse {
+    width: 80%;
+  }
+} */
+
+/* @media screen and (max-width: 995px){
+
+} */
+
+@media screen and (max-width: 885px){
   .navbar-collapse {
     width: 80%;
   }
 }
 
-@media screen and (max-width: 995px) {
+@media screen and (max-width: 768px) {
   header {
     position: relative;
   }
@@ -142,6 +160,7 @@ header {
     width: 100%;
     height: 100vh;
     position: absolute;
+    background-color: #fff;
     top: 0;
     left: 0;
     display: flex;
@@ -178,12 +197,8 @@ header {
   }
 }
 
-/* @media screen and (max-width: 885px){
 
-} */
-/* @media screen and (max-width: 768px){
-
-}
+/*
 @media screen and (max-width: 667px){
 
 }
