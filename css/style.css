@@ -198,7 +198,7 @@ header {
 }
 
 
-/*
+
 @media screen and (max-width: 667px){
 
 }
@@ -206,9 +206,19 @@ header {
 
 }
 @media screen and (max-width: 480px){
-
+.banner-text{
+  width: 90%;
+}
 }
 @media screen and (max-width: 320px){
+  .banner-text{
+    top: 20%;
+  }
+.banner-text .btn{
+  display: inline-grid;
+}
+.banner-text a{
+  margin-bottom: 10px;
 
-} */
+}
 /* responsive end here========================================= */
