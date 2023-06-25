@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #2596be; /* Red */
+  --primary-color: #2596be;
+  /* Red */
 }
 
 /* univesal here============================================= */
@@ -26,7 +27,7 @@ header {
   z-index: 1;
 }
 
-.navbar-brand img{
+.navbar-brand img {
   width: 100px;
 }
 
@@ -56,7 +57,7 @@ header {
 }
 
 .nav-item a:hover,
-.nav-item a.active{
+.nav-item a.active {
   border-bottom: 1px solid #000;
 }
 
@@ -77,9 +78,9 @@ header {
 /* header end here============================================= */
 
 /* banner section start here=========================================== */
-.banner{
+.banner {
   position: relative;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  url("../assets/images/product_background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/product_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,42 +93,88 @@ header {
 
   0%,
   100% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/homepage_3.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/aluminum-tanks-storage-raw-materials-chemical-industry-sterile-conditions-enterprise.jpg");
 
   }
 
   25% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/factory_work.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/people-white-isolating-costumes-working-laboratory.jpg");
   }
 
   50% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/flooring_soln.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/pharmaceutical-factory-man-worker-protective-clothing-operate-production-line-sterile-working-conditions.jpg");
   }
 
   75% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/pharma.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/images/pharmacy-industry-woman-worker-protective-clothing-operating-production-tablets-sterile-working-conditions.jpg");
   }
 }
 
-.banner-text{
-  position: absolute;
+.banner-content {
+  /* position: absolute; */
   top: 30%;
   width: 50%;
   line-height: 1.6;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+
 }
-.banner-text p{
-  padding-bottom: 20px;
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  animation: slideDown 2s ease-in-out forwards;
 }
-.banner-text a{
+
+.banner-btn {
+  position: absolute;
+  bottom: 40%;
+  animation: slideUp 3s ease-in-out forwards;
+  display: inline-block;
+}
+
+
+@keyframes slideDown {
+  0% {
+    top: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  100% {
+    top: 30%;
+    opacity: 1;
+    transform: translateY(-30%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    top: 100%;
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    top: 0%;
+    opacity: 1;
+    transform: translateY(75%);
+  }
+}
+
+.banner-content a {
   padding: 10px;
   border: 1px solid #fff;
   text-decoration: none;
   font-size: 12px;
 }
-.banner-text,
-.banner-text a{
+
+.banner-content,
+.banner-content a {
   color: #fff;
 }
+
 /* banner section end here=========================================== */
 
 
@@ -136,10 +183,12 @@ header {
   .navbar-collapse {
     width: 70%;
   }
+
   .nav-item a {
     font-size: 12px;
-    }
+  }
 }
+
 /* @media screen and (max-width: 1024px) {
   .navbar-collapse {
     width: 80%;
@@ -150,7 +199,7 @@ header {
 
 } */
 
-@media screen and (max-width: 885px){
+@media screen and (max-width: 885px) {
   .navbar-collapse {
     width: 80%;
   }
@@ -162,7 +211,7 @@ header {
   }
 
   .navbar-collapse {
-  
+
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -195,36 +244,97 @@ header {
     display: block;
   }
 
-  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
     display: block;
   }
-  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"]{
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
     display: none;
   }
+
 }
 
 
 
-@media screen and (max-width: 667px){
+@media screen and (max-width: 667px) {}
 
-}
-@media screen and (max-width: 580px){
+@media screen and (max-width: 580px) {
+  @keyframes slideDown {
+    0% {
+      top: 0;
+      opacity: 0;
+      transform: translateY(-100%);
+    }
 
+    100% {
+      top: 30%;
+      opacity: 1;
+      transform: translateY(-30%);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      top: 100%;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    100% {
+      top: 0%;
+      opacity: 1;
+      transform: translateY(85%);
+    }
+  }
 }
-@media screen and (max-width: 480px){
-.banner-text{
-  width: 90%;
+
+@media screen and (max-width: 480px) {
+  .banner-content {
+    width: 90%;
+  }
 }
-}
-@media screen and (max-width: 320px){
-  .banner-text{
+
+@media screen and (max-width: 320px) {
+  .banner-content {
     top: 20%;
   }
-.banner-text .btn{
-  display: inline-grid;
-}
-.banner-text a{
-  margin-bottom: 10px;
 
+  .banner-content .banner-btn {
+    /* display: inline-grid; */
+  }
+
+  .banner-content a {
+    margin-bottom: 10px;
+
+  }
+
+  @keyframes slideDown {
+    0% {
+      top: 0;
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+
+    100% {
+      top: 30%;
+      opacity: 1;
+      transform: translateY(-30%);
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      top: 100%;
+      opacity: 0;
+      transform: translateY(100%);
+    }
+
+    100% {
+      top: 0%;
+      opacity: 1;
+      transform: translateY(95%);
+    }
+  }
 }
+
 /* responsive end here========================================= */
