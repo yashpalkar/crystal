@@ -18,6 +18,11 @@
   margin: 0 auto;
 }
 
+/* all similar tags here======================== */
+h2{
+  font-size: 35px;
+}
+
 /* header start here=========================================== */
 header {
   padding: 10px 0;
@@ -113,10 +118,10 @@ header {
 .banner-content {
   /* position: absolute; */
   top: 30%;
-  width: 50%;
+  width: 80%;
   line-height: 1.6;
   margin: auto;
-  text-align: center;
+  /* text-align: center; */
   vertical-align: middle;
 
 }
@@ -124,12 +129,13 @@ header {
 .banner-text {
   position: absolute;
   top: 30%;
+  width: 50%;
   animation: slideDown 2s ease-in-out forwards;
 }
 
 .banner-btn {
   position: absolute;
-  bottom: 40%;
+  bottom: 30%;
   animation: slideUp 3s ease-in-out forwards;
   display: inline-block;
 }
@@ -177,24 +183,94 @@ header {
 
 /* banner section end here=========================================== */
 
+/* about section start here=========================================== */
+#aboutUs{
+  padding: 100px 0;
+}
+#aboutUs .wrapper{
+  padding: 0 100px;
+  animation: aboutSlideUp 3s ease-in-out forwards;
+}
+@keyframes aboutSlideUp {
+  0% {
+    top: 0%;
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  100% {
+    top: 0%;
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+#aboutUs .wrapper h2{
+  text-align: center;
+  padding:0 0 30px 0 ;
+}
+#aboutUs .wrapper p{
+  font-size: 18px;
+  line-height: 1.6;
+}
+.aboutUs{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 50px 0;
+}
+.aboutUsText{
+  width: 50%;
+}
+.aboutUsImg img{
+  height: 250px;
+}
+.aboutUsText span{
+  color: #555;
+  padding-bottom: 10px;
+  display: block;
+}
+.aboutUsList li{
+  list-style-type: none;
+  padding-top: 30px;
+}
+.aboutUsList span{
+  font-size: 22px;
+}
+.aboutUsList span::before{
+  font-family: "fontAwesome";
+  padding-right: 10px;
+  color: var(--primary-color);
+  text-indent: 0;
+}
+.aboutUsList #vision::before{
+  content: '\f2da';
+}
+.aboutUsList #mission::before{
+  content: '\f2da';
+}
+/* about section end here=========================================== */
+
+
 
 /* responsive start here======================================= */
 @media screen and (max-width: 1115px) {
   .navbar-collapse {
     width: 70%;
   }
+  
+  .banner-text {
+    width: 70%;
+  }
 
-  .nav-item a {
-    font-size: 12px;
+  #aboutUs .wrapper{
+    padding: 0 50px;
   }
 }
 
 /* @media screen and (max-width: 1024px) {
-  .navbar-collapse {
-    width: 80%;
-  }
-} */
 
+} */
 /* @media screen and (max-width: 995px){
 
 } */
@@ -202,6 +278,9 @@ header {
 @media screen and (max-width: 885px) {
   .navbar-collapse {
     width: 80%;
+  }
+  #aboutUs .wrapper{
+    padding: 0;
   }
 }
 
@@ -252,11 +331,34 @@ header {
     display: none;
   }
 
+  .banner-text {
+    width: 80%;
+  }
 }
 
 
 
-@media screen and (max-width: 667px) {}
+@media screen and (max-width: 667px) {
+  .banner-content {
+    width: 100%;
+  }
+  .banner-text {
+    width: 90%;
+  }
+  .aboutUs,
+.aboutUsText,
+.aboutUs figure{
+  text-align: center;
+  text-align: -webkit-center;
+  display:block;
+
+}
+
+.aboutUsText{
+  width: 70%;
+}
+
+}
 
 @media screen and (max-width: 580px) {
   @keyframes slideDown {
@@ -286,12 +388,17 @@ header {
       transform: translateY(85%);
     }
   }
+
+  h2{
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .banner-content {
-    width: 90%;
+  h2{
+    font-size: 25px;
   }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -299,9 +406,6 @@ header {
     top: 20%;
   }
 
-  .banner-content .banner-btn {
-    /* display: inline-grid; */
-  }
 
   .banner-content a {
     margin-bottom: 10px;
@@ -335,6 +439,16 @@ header {
       transform: translateY(95%);
     }
   }
+
+  .banner-btn {
+    bottom: 25%;
+  }
+  .banner-content a {
+    display: block;
+}
+.aboutUs img{
+  height: 150px;
+}
 }
 
 /* responsive end here========================================= */
