@@ -1,5 +1,6 @@
 :root {
   --primary-color: #2596be;
+  --black-charcoal: #36454F;
   /* Red */
 }
 
@@ -19,7 +20,7 @@
 }
 
 /* all similar tags here======================== */
-h2{
+h2 {
   font-size: 35px;
 }
 
@@ -184,13 +185,15 @@ header {
 /* banner section end here=========================================== */
 
 /* about section start here=========================================== */
-#aboutUs{
+#aboutUs {
   padding: 100px 0;
 }
-#aboutUs .wrapper{
+
+#aboutUs .wrapper {
   padding: 0 100px;
   animation: aboutSlideUp 3s ease-in-out forwards;
 }
+
 @keyframes aboutSlideUp {
   0% {
     top: 0%;
@@ -205,50 +208,65 @@ header {
   }
 }
 
-#aboutUs .wrapper h2{
+#aboutUs .wrapper h2 {
   text-align: center;
-  padding:0 0 30px 0 ;
+  padding: 0 0 30px 0;
 }
-#aboutUs .wrapper p{
+
+#aboutUs .wrapper p {
   font-size: 18px;
   line-height: 1.6;
 }
-.aboutUs{
+
+.aboutUs {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 50px 0;
 }
-.aboutUsText{
+
+.aboutUsText {
   width: 50%;
 }
-.aboutUsImg img{
+
+.aboutUsImg img {
   height: 250px;
 }
-.aboutUsText span{
-  color: #555;
+
+#aboutUs .wrapper h2,
+.aboutUsText span {
+  color: var(--black-charcoal);
+}
+
+.aboutUsText span {
   padding-bottom: 10px;
   display: block;
 }
-.aboutUsList li{
+
+.aboutUsList li {
   list-style-type: none;
   padding-top: 30px;
 }
-.aboutUsList span{
+
+.aboutUsList span {
   font-size: 22px;
 }
-.aboutUsList span::before{
+
+.aboutUsList span::before {
   font-family: "fontAwesome";
   padding-right: 10px;
   color: var(--primary-color);
   text-indent: 0;
 }
-.aboutUsList #vision::before{
+
+.aboutUsList #vision::before {
   content: '\f2da';
 }
-.aboutUsList #mission::before{
+
+.aboutUsList #mission::before {
   content: '\f2da';
 }
+
 /* about section end here=========================================== */
 
 
@@ -258,12 +276,12 @@ header {
   .navbar-collapse {
     width: 70%;
   }
-  
+
   .banner-text {
     width: 70%;
   }
 
-  #aboutUs .wrapper{
+  #aboutUs .wrapper {
     padding: 0 50px;
   }
 }
@@ -279,7 +297,8 @@ header {
   .navbar-collapse {
     width: 80%;
   }
-  #aboutUs .wrapper{
+
+  #aboutUs .wrapper {
     padding: 0;
   }
 }
@@ -342,21 +361,23 @@ header {
   .banner-content {
     width: 100%;
   }
+
   .banner-text {
     width: 90%;
   }
+
   .aboutUs,
-.aboutUsText,
-.aboutUs figure{
-  text-align: center;
-  text-align: -webkit-center;
-  display:block;
+  .aboutUsText,
+  .aboutUs figure {
+    text-align: center;
+    text-align: -webkit-center;
+    display: block;
 
-}
+  }
 
-.aboutUsText{
-  width: 70%;
-}
+  .aboutUsText {
+    width: 70%;
+  }
 
 }
 
@@ -389,13 +410,13 @@ header {
     }
   }
 
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h2{
+  h2 {
     font-size: 25px;
   }
 
@@ -443,12 +464,14 @@ header {
   .banner-btn {
     bottom: 25%;
   }
+
   .banner-content a {
     display: block;
-}
-.aboutUs img{
-  height: 150px;
-}
+  }
+
+  .aboutUs img {
+    height: 150px;
+  }
 }
 
 /* responsive end here========================================= */

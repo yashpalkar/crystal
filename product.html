@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper slider + Bootstrap demo page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" integrity="sha256-XwfUNXGiAjWyUGBhyXKdkRedMrizx1Ejqo/NReYNdUE=" crossorigin="anonymous" />
+
+<!-- Font Awesome CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(assets\images\comill.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\conta_blender.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\fluid_bed_dryer.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\innovas_machine_cdr.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\lifter.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\multimill.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\octagonalblender.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\rmg.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\vibrolifter.png)"></div>
+        </div>
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(assets\images\comill.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\conta_blender.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\fluid_bed_dryer.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\innovas_machine_cdr.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\lifter.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\multimill.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\octagonalblender.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\rmg.png)"></div>
+            <div class="swiper-slide" style="background-image:url(assets\images\vibrolifter.png)"></div>
+        </div>
+    </div>
+
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js" integrity="sha256-uckMYBvIGtce2L5Vf/mwld5arpR5JuhAEeJyjPZSUKY=" crossorigin="anonymous"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 9,
+            slidesPerView: 9,
+            loop: true,
+            freeMode: false,
+            loopedSlides: 9, //looped slides should be the same
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 9,
+            loop: true,
+            loopedSlides: 9, //looped slides should be the same
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs,
+            },
+        });
+    </script>
+
+    <!-- Bootstrap JS, Popper.js and Jquery CDNS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
