@@ -1,12 +1,4 @@
- body {
-   font-family: Arial, Helvetica, sans-serif;
-   /* background: #2a2b2b; */
-   /* fallback for old browsers */
-   /* Chrome 10-25, Safari 5.1-6 */
 
-
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- }
   .card img {
     width: 100%;
   }
@@ -36,6 +28,7 @@
    display: -ms-flexbox;
    display: flex;
    width: 99999px;
+
  }
 
  .card {
@@ -43,11 +36,12 @@
    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    background: #fff;
-   border-radius: 50px 50px 0 0;
+   border-radius: 15px 15px 15px 15px;
    -webkit-transition: 0.3s;
    transition: 0.3s;
    width: 300px;
    margin: 15px 20px;
+   max-height: 700px;
    /* text-align: -webkit-center; */
  }
 
