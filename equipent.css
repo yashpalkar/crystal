@@ -1,103 +1,174 @@
 
-  .card img {
-    width: 100%;
+
+
+
+  /* .equipment-container {
+    display: flex;
+
   }
-  .equipment h2{
-    text-align: center;
-  }
- .equipment-container {
 
-   display: flex;
-   -webkit-box-align: center;
-   -ms-flex-align: center;
-   align-items: center;
-   -webkit-box-pack: justify;
-   -ms-flex-pack: justify;
-   justify-content: space-between;
-   /* text-align-last: center; */
-   padding: 4px 16px;
- }
 
- #cards-container {
-   overflow: hidden;
-   margin: 20px;
- }
 
- .cards {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   width: 99999px;
+  .cards {
+ */
+    /* display: flex; */
+    /* width: 100%; */
 
- }
+  /* } */
 
- .card {
-   /* Add shadows to create the "card" effect  */
-   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   background: #fff;
-   border-radius: 15px 15px 15px 15px;
-   -webkit-transition: 0.3s;
-   transition: 0.3s;
-   width: 300px;
-   margin: 15px 20px;
-   max-height: 700px;
-   /* text-align: -webkit-center; */
- }
+  /* .card { */
+    /* Add shadows to create the "card" effect  */
+    /* 
+    max-height: 650px; */
+    /* text-align: -webkit-center; */
+  /* } */
 
- .card:hover {
-   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-   cursor: pointer;
- }
-.card .container{
-  padding: 20px;
-}
-.card .container h4{
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-.card .container p{
-  line-height: 1.4;
-}
- /* .card .img {
+  /*
+
+ */
+
+  /* .card .img {
    max-width: 100px;
    height: 300px;
    display: inline-block;
  } */
 
- #slide-left-container,
- #slide-right-container {
-   display: none;
- }
-
- #slide-left-container.active,
- #slide-right-container.active {
-   display: block;
-   cursor: pointer;
- }
-
- .slide-left,
- .slide-right {
-   border-color: #1c4fc4;
-   border-style: solid;
-   height: 20px;
-   width: 20px;
-   margin-top: 30%;
- }
-
- .slide-left {
-   border-width: 4px 0 0 4px;
-   -webkit-transform: rotate(-45deg);
-   transform: rotate(-45deg);
-   margin-left: 40%;
- }
-
- .slide-right {
-   border-width: 4px 4px 0 0;
-   -webkit-transform: rotate(45deg);
-   transform: rotate(45deg);
-   margin-left: 22%;
- }
 
 
+
+
+
+
+
+  /* equipment section here======================= */
+  .equipment h2{
+    text-align: center;
+  }
+.equipment-container{
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align-last: center;
+  padding: 4px 16px;
+}
+.card img {
+  width: 100%; 
+}
+.cards{
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+.card{
+  width: 30%;
+  height: 700px;
+  display: block;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin: 15px 20px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card .container {
+  padding: 20px;
+}
+
+.card .container h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.card .container p {
+  line-height: 1.4;
+}
+
+#cards-container {
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* .cropped1 {
+  width: 1000px;
+  height: 100%;
+  object-fit: cover;
+} */
+
+#slide-left-container,
+#slide-right-container {
+  display: none;
+}
+
+#slide-left-container.active,
+#slide-right-container.active {
+  display: block;
+  cursor: pointer;
+}
+
+.slide-left,
+.slide-right {
+  border-color: #1c4fc4;
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  margin-top: 30%;
+}
+
+.slide-left {
+  border-width: 4px 0 0 4px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 40%;
+}
+
+.slide-right {
+  border-width: 4px 4px 0 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-left: 22%;
+}
+  /* responsive start here======================== */
+  @media screen and (max-width: 1024px) {
+    .cards .card {
+      display: flex;
+      height: 300px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 995px) {
+    .cards .card {
+      display: block;
+      height: 550px;
+      width: 100%;
+    }
+    .card img {
+      width: 50%; 
+    }
+  }
+
+  @media screen and (max-width: 885px) {}
+
+  @media screen and (max-width: 768px) {}
+
+  @media screen and (max-width: 667px) {}
+
+  @media screen and (max-width: 480px) {
+    .card img {
+      width: 100%; 
+    }
+  }
+
+  @media screen and (max-width: 320px) {}
