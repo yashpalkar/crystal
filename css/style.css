@@ -1,5 +1,6 @@
 :root {
   --primary-color: #2596be;
+  --black-charcoal:#36454F;
   /* Red */
 }
 
@@ -63,7 +64,7 @@ header {
 
 .nav-item a:hover,
 .nav-item a.active {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid  var(--black-charcoal);
 }
 
 .mobile-navbar-btn {
@@ -210,6 +211,7 @@ header {
   padding:0 0 30px 0 ;
 }
 #aboutUs .wrapper p{
+  color: var(--primary-color);
   font-size: 18px;
   line-height: 1.6;
 }
