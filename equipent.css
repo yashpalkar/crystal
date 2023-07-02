@@ -64,7 +64,7 @@
   display: -ms-flexbox;
 }
 .card{
-  width: 200px;
+  /* width: 200px; */
   height: 700px;
   display: block;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -93,6 +93,7 @@
 
 .card .container p {
   line-height: 1.4;
+  padding-bottom: 20px;
 }
 
 #cards-container {
@@ -140,33 +141,68 @@
   margin-left: 22%;
 }
   /* responsive start here======================== */
+ 
+    @media screen and (max-width: 1600px) {
+    .cards .card {
+      display: block;
+      /* height: 550px; */
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 1260px) {
+    .cards .card {
+      display: block;
+      /* height: 550px; */
+      width: 250px;
+    }
+  }
+
   @media screen and (max-width: 1024px) {
     .cards .card {
-      display: flex;
-      height: 300px;
-      width: 600px;
+      display: block;
+      /* height: 550px; */
+      width: 200px;
     }
   }
   @media screen and (max-width: 995px) {
     .cards .card {
       display: block;
-      height: 550px;
+      /* height: 550px;/ */
       width: 250px;
     }
-    .card img {
+    /* .card img {
       width: 50%; 
+    } */
+  }
+
+  @media screen and (max-width: 885px) {
+    .cards .card {
+      display: block;
+      width: 250px;
     }
   }
 
-  @media screen and (max-width: 885px) {}
+  @media screen and (max-width: 768px) {
+    .cards .card {
+      display: block;
+      width: 250px;
+    }
+  }
 
-  @media screen and (max-width: 768px) {}
-
-  @media screen and (max-width: 667px) {}
+  @media screen and (max-width: 667px) {
+    .cards .card {
+      display: block;
+      width: 250px;
+    }
+  }
 
   @media screen and (max-width: 480px) {
-    .card img {
+    /* .card img {
       width: 80%; 
+    } */
+    .cards .card {
+      display: block;
+      width: 250px;
     }
   }
 
