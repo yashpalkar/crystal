@@ -65,7 +65,17 @@ function updateSliderArrowsStatus(
       .children(".card").length;
     let speed = 1000;
     let containerWidth = $(".container").width();
-    let cardWidth = 250;
+    let cardWidth = 250; 
+    var x = window.matchMedia("(max-width: 1024px)");
+    var y = window.matchMedia("(max-width: 850px)");
+    if (y.matches) { // If media query matches
+      cardWidth = 250; 
+      console.log(cardWidth);
+   } else if(x.matches) {
+      cardWidth = 600; 
+      console.log(cardWidth);
+   }
+   
   
     updateSliderArrowsStatus(div, containerWidth, cardCount, cardWidth);
   
@@ -132,4 +142,5 @@ function updateSliderArrowsStatus(
       }
     });
   });
-  
+
+

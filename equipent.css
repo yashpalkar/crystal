@@ -64,7 +64,7 @@
   display: -ms-flexbox;
 }
 .card{
-  width: 30%;
+  width: 200px;
   height: 700px;
   display: block;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -144,15 +144,14 @@
     .cards .card {
       display: flex;
       height: 300px;
-      width: 100%;
+      width: 600px;
     }
   }
-
   @media screen and (max-width: 995px) {
     .cards .card {
       display: block;
       height: 550px;
-      width: 100%;
+      width: 250px;
     }
     .card img {
       width: 50%; 
@@ -167,8 +166,14 @@
 
   @media screen and (max-width: 480px) {
     .card img {
-      width: 100%; 
+      width: 80%; 
     }
   }
 
-  @media screen and (max-width: 320px) {}
+  @media screen and (max-width: 320px) {
+    .cards .card {
+      display: block;
+  
+      width: 250px;
+    }
+  }
