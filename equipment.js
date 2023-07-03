@@ -64,13 +64,14 @@ function updateSliderArrowsStatus(
       .find(".cards")
       .children(".card").length;
     let speed = 1000;
-    let containerWidth = $(".container").width();
+    let containerWidth = $(".equipment-container").width();
     let cardWidth = 250; 
-    var x = window.matchMedia("(max-width: 1260px)");
+     console.log(cardCount);
+    var x = window.matchMedia("(max-width: 1200px)");
     // var y = window.matchMedia("(max-width: 850px)");
     if (x.matches) { // If media query matches
       cardWidth = 600; 
-      console.log(cardWidth);
+      // console.log(cardWidth);
    } 
    
   

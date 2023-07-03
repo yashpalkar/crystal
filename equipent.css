@@ -1,6 +1,10 @@
 
 
-
+:root {
+  --primary-color: #2596be;
+  --black-charcoal:#36454F;
+  /* Red */
+}
 
   /* .equipment-container {
     display: flex;
@@ -43,6 +47,7 @@
   /* equipment section here======================= */
   .equipment h2{
     text-align: center;
+    color: var(--black-charcoal);
   }
 .equipment-container{
   display: flex;
@@ -74,6 +79,7 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
     margin: 15px 20px;
+    width: 100%;
 }
 
 .card:hover {
@@ -161,7 +167,7 @@
     .cards .card {
       display: block;
       /* height: 550px; */
-      width: 200px;
+      width: 250px;
     }
   }
   @media screen and (max-width: 995px) {
