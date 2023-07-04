@@ -142,3 +142,38 @@ function updateSliderArrowsStatus(
   });
 
 
+
+  var images = [
+    {name : "value", image : "airshower.png",},
+    {name : "value", image : "drumtrolly.png",},
+      {name : "value", image : "airshower.png",},
+      {name : "value", image : "drumtrolly.png",},
+  ];
+var index=0;
+ change("image_holder1",images,5000);
+ change("image_holder2",images,4000);
+ change("image_holder3",images,4500);
+ change("image_holder4",images,3500);
+ change("image_holder5",images,5500);
+ change("image_holder6",images,6500);
+ change("image_holder7",images,6000);
+ change("image_holder8",images,7000);
+
+
+
+function change(placeholder_id,image_arry,timeinterval) {
+  const imageplace_holder = document.getElementById(placeholder_id);   
+  let width = 0;
+  const id = setInterval(imagechange, timeinterval);
+  function imagechange() {
+    imageplace_holder.src = image_arry[index].image;
+    
+  if (index == images.length-1) {
+    index = 0;
+  } else {
+    index++;
+  }
+  }
+}
+
+
