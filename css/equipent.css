@@ -153,7 +153,7 @@
 /*equipment image view==================================*/
 
 .equipment-image-container {
-  background-color: #2596be;
+/*  background-color: #2596be;*/
   padding: 20px 0;
 }
 
@@ -178,7 +178,7 @@
   width: 300px;
   object-fit: cover;
   transition: .5s;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+/*  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);*/
   object-fit: cover;
 }
 

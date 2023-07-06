@@ -7,3 +7,35 @@ const toggleNavbr = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbr());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
