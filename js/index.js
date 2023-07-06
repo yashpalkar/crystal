@@ -7,3 +7,43 @@ const toggleNavbr = () => {
 };
 
 mobile_nav.addEventListener("click", () => toggleNavbr());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// product js========================================
+function productPopup() {
+    document.querySelector(".productContainer").classList.toggle("active");
+}
+
+function closeBtn() {
+    document.querySelector(".productContainer").classList.toggle("productContainer");
+  }
+
+

@@ -1,0 +1,133 @@
+/* product showing ====================================*/
+.product{
+    text-align: center;
+    text-align: -webkit-center;
+}
+.allProductSection{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.productContainer{
+    display: none;
+}
+
+.productContainer.active{
+    position: absolute;
+    background-color: #fff;
+    display: block;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 50px 0;
+    border: 1px solid;
+    width: 75%;
+}
+
+/* .productContentImg img{
+    width: 100%;
+} */
+
+.productContentText{
+    width: 60%;
+}
+.productContentText h3{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.productContentText p{
+    font-size: 20px;
+}
+.productContainer .closeBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* click to show======================== */
+#productContainer{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+}
+#productContainer img{
+    width: 20%;
+}
+
+#productContainer .arrow::before{
+    content: "\f105";
+    font-family: "fontAwesome";
+    text-indent: 0;
+    font-size: 40px;
+    padding-left: 200px;   
+}
+
+
+/* responsive here=========================== */
+@media screen and (max-width: 1115px) {
+    .productContainer.active{
+        display: block;
+    }
+
+    .productContentImg img{
+    width: 30% !important;
+}
+
+    .productContentText{
+        width: 100%;
+    }
+
+    #productContainer{
+        margin: 20px 0;}
+    #productContainer .arrow::before{
+        padding:0 50px 0 150px;   
+    }
+
+}
+@media screen and (max-width: 995px){
+    #productContainer .arrow::before{
+        padding:0 50px 0 100px;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #productContainer .arrow::before{
+        padding:0 40px;   
+    }
+}
+
+@media screen and (max-width: 667px) {
+        .productContentImg img{
+    width: 60% !important;
+}
+    .productContentText h3{
+        font-size: 25px;}
+        #productContainer .arrow::before{
+            padding:0 10px;   
+        }
+}
+
+@media screen and (max-width: 580px) {
+    #productContainer img{
+        width: 50%;
+    }
+    #productContainer{
+        display: block;
+    }
+}
+@media screen and (max-width: 320px) {
+    #productContainer img{
+        width: 100%;
+    }
+}
