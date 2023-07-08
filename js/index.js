@@ -12,11 +12,19 @@ mobile_nav.addEventListener("click", () => toggleNavbr());
 
 
 
+var clickhere=document.querySelector(".Click-here");
+const custommodelmain=document.getElementById("custom-model-main");
 
 
+clickhere.addEventListener('click',()=>{
+    console.log(custommodelmain);
+    custommodelmain.classList.add('model-open');
+})
+  var closebtn=document.querySelector(".close-btn");
 
-
-
+  closebtn.addEventListener('click',()=>{
+    custommodelmain.classList.remove('model-open');
+})
 
 
 

@@ -219,10 +219,11 @@ header {
 #aboutUs .wrapper h2{
   text-align: center;
   padding:0 0 30px 0 ;
-  color: var(--black-charcoal);
+  color: var(--primary-color);
 }
 #aboutUs .wrapper p{
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: var(--black-charcoal);
   font-size: 18px;
   line-height: 1.6;
 }
