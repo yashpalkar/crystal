@@ -1,7 +1,17 @@
 /* product showing ====================================*/
+:root {
+  --primary-color: #2596be;
+  --black-charcoal:#36454F;
+  /* Red */
+}
 .product{
     text-align: center;
     text-align: -webkit-center;
+    padding: 100px 0;
+}
+.product h2{
+  color: var(--primary-color);
+  padding: 0 0 30px 0;
 }
 .allProductSection{
     display: flex;
@@ -122,9 +132,10 @@
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     display: inline-block;
     vertical-align: middle;
-    width: 600px;
+    /* width: 600px; */
     margin: 30px auto;
     max-width: 97%;
+    width: 80%;
   }
   .custom-model-wrap {
     display: flex;

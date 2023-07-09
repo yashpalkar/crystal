@@ -44,8 +44,9 @@
 
 /* equipment section here======================= */
 .equipment h2 {
+  padding: 0 0 30px 0;
   text-align: center;
-  color: var(--black-charcoal);
+  color: var(--primary-color);
 }
 
 .equipment-container {
@@ -153,8 +154,9 @@
 /*equipment image view==================================*/
 
 .equipment-image-container {
-/*  background-color: #2596be;*/
+ background-color: #f5f5f5;
   padding: 20px 0;
+  
 }
 
 .equipment-image-container .wrapper {
@@ -169,13 +171,13 @@
   box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
   border-radius: 10px;
   background-color: #fff;
-  color: #2596be;
+  color: var(--black-charcoal);
   margin: 20px;
   padding: 20px;
 }
 
 .equipment-card>img {
-  width: 300px;
+  width: 150px;
   object-fit: cover;
   transition: .5s;
 /*  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);*/
@@ -183,7 +185,7 @@
 }
 
 .equipment-card>span {
-  font-size: 3.8vh;
+  font-size: 2.8vh;
   display: block;
   text-align: center;
   padding-top: 10px;
@@ -192,7 +194,7 @@
 
 /* responsive start here======================== */
 
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 20000px) {
   .cards .card {
     display: block;
     /* height: 550px; */
