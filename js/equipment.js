@@ -179,16 +179,15 @@ $(function () {
 });
 
 var equipment_images_array = [
-  { name: "value", image: "assets/images/ss_hydraulich_pallet_truck.png" },
-  { name: "value", image: "drumtrolly.png" },
-  { name: "value", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
-  { name: "value", image: "drumtrolly.png" },
-  { name: "value", image: "assets/images/tray_trolley.png" },
-  { name: "value", image: "assets/images/ss_chair.png" },
-  { name: "value", image: "assets/images/square_stool.png" },
-  { name: "value", image: "assets/images/round_stool.png" },
-  { name: "value", image: "assets/images/ss_platte.png" },
-  { name: "value", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
+  { name: "SS Hydraulic Hand Pallet Truck", image: "assets/images/ss_hydraulich_pallet_truck.png" },
+  { name: "Drum Trolley", image: "drumtrolly.png" },
+  { name: "MS Hydraulic Hand Pallet Truck", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
+  { name: "Tray Trolley", image: "assets/images/tray_trolley.png" },
+  { name: "SS Chair", image: "assets/images/ss_chair.png" },
+  { name: "Square Stool", image: "assets/images/square_stool.png" },
+  { name: "Round Stool", image: "assets/images/round_stool.png" },
+  { name: "SS Pallet", image: "assets/images/ss_platte.png" },
+  // { name: "value", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
 ];
 var index = 0;
 change("image_holder1","equipment_title1", equipment_images_array, 5000);
