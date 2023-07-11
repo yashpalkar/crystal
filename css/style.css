@@ -196,7 +196,7 @@ header {
 
 /* about section start here=========================================== */
 #aboutUs{
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 #aboutUs .wrapper{
   padding: 0 100px;

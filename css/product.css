@@ -4,6 +4,9 @@
   --black-charcoal:#36454F;
   /* Red */
 }
+#product{
+  padding: 100px 0 0 0;
+}
 .product{
     text-align: center;
     text-align: -webkit-center;
@@ -42,12 +45,13 @@
     /* margin: 5px 0 5px 0px; */
 }
 .productContainer img{
-    width: 130px;
+    width: 110px;
  object-fit: cover;
    
     border: 1px solid #D3D3D3 ;
 }
 .productContentText{
+    color:var(--black-charcoal);
      flex: 5;
      padding: 10px;
      margin: 10px
