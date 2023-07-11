@@ -178,30 +178,38 @@ $(function () {
   });
 });
 
-var images = [
-  { name: "value", image: "airshower.png" },
+var equipment_images_array = [
+  { name: "value", image: "assets/images/ss_hydraulich_pallet_truck.png" },
   { name: "value", image: "drumtrolly.png" },
-  { name: "value", image: "airshower.png" },
+  { name: "value", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
   { name: "value", image: "drumtrolly.png" },
+  { name: "value", image: "assets/images/tray_trolley.png" },
+  { name: "value", image: "assets/images/ss_chair.png" },
+  { name: "value", image: "assets/images/square_stool.png" },
+  { name: "value", image: "assets/images/round_stool.png" },
+  { name: "value", image: "assets/images/ss_platte.png" },
+  { name: "value", image: "assets/images/ms_hydraulic_hand_pallet_truck.png" },
 ];
 var index = 0;
-change("image_holder1", images, 5000);
-change("image_holder2", images, 4000);
-change("image_holder3", images, 4500);
-change("image_holder4", images, 3500);
-change("image_holder5", images, 5500);
-change("image_holder6", images, 6500);
-change("image_holder7", images, 6000);
-change("image_holder8", images, 7000);
+change("image_holder1","equipment_title1", equipment_images_array, 5000);
+change("image_holder2","equipment_title2", equipment_images_array, 4000);
+change("image_holder3","equipment_title3", equipment_images_array, 4500);
+change("image_holder4","equipment_title4", equipment_images_array, 3500);
+change("image_holder5","equipment_title5", equipment_images_array, 5500);
+change("image_holder6","equipment_title6", equipment_images_array, 6500);
+change("image_holder7","equipment_title7", equipment_images_array, 6000);
+change("image_holder8","equipment_title8", equipment_images_array, 7000);
+change("image_holder9","equipment_title9", equipment_images_array, 7000);
 
-function change(placeholder_id, image_arry, timeinterval) {
+function change(placeholder_id,equipment_title_id, image_arry, timeinterval) {
   const imageplace_holder = document.getElementById(placeholder_id);
+  const equipment_title=document.getElementById(equipment_title_id);
   let width = 0;
   const id = setInterval(imagechange, timeinterval);
   function imagechange() {
     imageplace_holder.src = image_arry[index].image;
-
-    if (index == images.length - 1) {
+    equipment_title.textContent=image_arry[index].name;
+    if (index == equipment_images_array.length - 1) {
       index = 0;
     } else {
       index++;
