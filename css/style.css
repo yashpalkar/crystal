@@ -5,7 +5,7 @@ font-family: 'Playfair Display SC', serif; */
 
 :root {
   --primary-color: #2596be;
-  --black-charcoal:#36454F;
+  --black-charcoal: #36454F;
   /* Red */
 }
 
@@ -25,9 +25,9 @@ font-family: 'Playfair Display SC', serif; */
 }
 
 /* all similar tags here======================== */
-h2{
+h2 {
   font-size: 35px;
-  
+
 }
 
 /* header start here=========================================== */
@@ -70,7 +70,7 @@ header {
 
 .nav-item a:hover,
 .nav-item a.active {
-  border-bottom: 1px solid  var(--black-charcoal);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .mobile-navbar-btn {
@@ -138,9 +138,10 @@ header {
   top: 30%;
   width: 50%;
   animation: slideDown 2s ease-in-out forwards;
-  
+
 }
-.banner-text p{
+
+.banner-text p {
   margin-top: 20px;
 }
 
@@ -195,13 +196,15 @@ header {
 /* banner section end here=========================================== */
 
 /* about section start here=========================================== */
-#aboutUs{
+#aboutUs {
   padding: 100px 0 0 0;
 }
-#aboutUs .wrapper{
+
+#aboutUs .wrapper {
   padding: 0 100px;
   animation: aboutSlideUp 3s ease-in-out forwards;
 }
+
 @keyframes aboutSlideUp {
   0% {
     top: 0%;
@@ -216,55 +219,162 @@ header {
   }
 }
 
-#aboutUs .wrapper h2{
+#contact .wrapper h2,
+#aboutUs .wrapper h2 {
   text-align: center;
-  padding:0 0 30px 0 ;
+  padding: 0 0 30px 0;
   color: var(--primary-color);
 }
-#aboutUs .wrapper p{
+
+#aboutUs .wrapper p {
   /* color: var(--primary-color); */
   color: var(--black-charcoal);
   font-size: 18px;
   line-height: 1.6;
 }
-.aboutUs{
+
+.aboutUs {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 50px 0;
 }
-.aboutUsText{
+
+.aboutUsText {
   width: 50%;
 }
-.aboutUsImg img{
+
+.aboutUsImg img {
   height: 250px;
 }
-.aboutUsText span{
+
+.aboutUsText span {
   color: #555;
   padding-bottom: 10px;
   display: block;
 }
-.aboutUsList li{
+
+.aboutUsList li {
   list-style-type: none;
   padding-top: 30px;
 }
-.aboutUsList span{
+
+.aboutUsList span {
   font-size: 22px;
 }
-.aboutUsList span::before{
+
+.aboutUsList span::before {
   font-family: "fontAwesome";
   padding-right: 10px;
   color: var(--primary-color);
   text-indent: 0;
 }
-.aboutUsList #vision::before{
+
+.aboutUsList #vision::before {
   content: '\f2da';
 }
-.aboutUsList #mission::before{
+
+.aboutUsList #mission::before {
   content: '\f2da';
 }
+
 /* about section end here=========================================== */
 
+/* contact start here================================================ */
+#contact {
+  background-color: #eee;
+  padding: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerTop {
+  text-align: center;
+}
+
+.footerTop .navbar-icon a {
+  display: block;
+  border-bottom: 2px solid transparent;
+}
+
+.footerTop .navbar-icon a:hover {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.footerTop .navbar-icon {
+  display: block;
+}
+
+.footerBottom {
+  line-height: 2;
+  display: block;
+  width: 40%;
+}
+
+.footerBottom span {
+  font-weight: bold;
+}
+
+.footerBottom span::before {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  padding-right: 10px;
+}
+
+.officialNumber span::before {
+  content: "\f095";
+}
+
+.officialMail span::before {
+  content: "\f003";
+}
+
+.officialAddress span::before {
+  content: "\f041";
+}
+
+.footerBottom a {
+  display: flex;
+  display: table-caption;
+  color: var(--black-charcoal);
+  text-decoration: none;
+}
+
+.footerBottom a:hover {
+  color: var(--primary-color);
+}
+
+/* contact map start here========== */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 40%;
+  /*i changed the with 100% to 40% */
+  height: 200px;
+  display: table;
+  /*added*/
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 300px;
+  /*i changed the with 200% to 300% */
+}
+
+.gmap_iframe {
+  height: 300px !important;
+  /*i changed the with 200% to 300% */
+}
+
+/* contact map end here========== */
+
+/* contact end here================================================ */
 
 
 /* responsive start here======================================= */
@@ -272,13 +382,19 @@ header {
   .navbar-collapse {
     width: 70%;
   }
-  
+
   .banner-text {
     width: 70%;
   }
 
-  #aboutUs .wrapper{
+  #aboutUs .wrapper {
     padding: 0 50px;
+  }
+
+  /* contact */
+  #contact {
+    padding: 50px 0;
+
   }
 }
 
@@ -293,7 +409,8 @@ header {
   .navbar-collapse {
     width: 80%;
   }
-  #aboutUs .wrapper{
+
+  #aboutUs .wrapper {
     padding: 0;
   }
 }
@@ -348,29 +465,58 @@ header {
   .banner-text {
     width: 80%;
   }
-}
 
+
+
+  /* contact========================= */
+  .contact,
+  .footerBottom a {
+    display: block;
+  }
+
+  .footerTop .navbar-icon a {
+    border-right-style: double;
+    border-left-style: double;
+  }
+
+  .footerTop .nav-item {
+    display: inline-block;
+  }
+
+  .footerBottom {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mapouter {
+    width: 100%;
+  }
+
+}
 
 
 @media screen and (max-width: 667px) {
   .banner-content {
     width: 100%;
   }
+
   .banner-text {
     width: 90%;
   }
+
   .aboutUs,
-.aboutUsText,
-.aboutUs figure{
-  text-align: center;
-  text-align: -webkit-center;
-  display:block;
+  .aboutUsText,
+  .aboutUs figure {
+    text-align: center;
+    text-align: -webkit-center;
+    display: block;
 
-}
+  }
 
-.aboutUsText{
-  width: 70%;
-}
+  .aboutUsText {
+    width: 70%;
+  }
 
 }
 
@@ -403,13 +549,13 @@ header {
     }
   }
 
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  h2{
+  h2 {
     font-size: 25px;
   }
 
@@ -457,12 +603,14 @@ header {
   .banner-btn {
     bottom: 25%;
   }
+
   .banner-content a {
     display: block;
-}
-.aboutUs img{
-  height: 150px;
-}
+  }
+
+  .aboutUs img {
+    height: 150px;
+  }
 }
 
 /* responsive end here========================================= */

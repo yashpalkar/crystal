@@ -43,6 +43,10 @@
 
 
 /* equipment section here======================= */
+#equipment {
+  padding: 50px 0 0 0;
+}
+
 .equipment h2 {
   padding: 0 0 30px 0;
   text-align: center;
@@ -154,9 +158,9 @@
 /*equipment image view==================================*/
 
 .equipment-image-container {
- background-color: #f5f5f5;
+  background-color: #f5f5f5;
   padding: 20px 0;
-  
+
 }
 
 .equipment-image-container .wrapper {
@@ -180,7 +184,7 @@
   width: 150px;
   object-fit: cover;
   transition: .5s;
-/*  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);*/
+  /*  box-shadow: 0 20px 30px rgba(0, 0, 0, .1);*/
   object-fit: cover;
 }
 

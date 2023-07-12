@@ -101,9 +101,9 @@ function showpop(clicked_id) {
     const product_details = document.getElementById("product-details");
     product_title.innerHTML = product_cnt[clicked_id].product_title;
     product_details.innerHTML = product_cnt[clicked_id].content_txt;
-      console.log(product_cnt[clicked_id].product_img);
-    prod_img.src=product_cnt[clicked_id].product_img;
-  
+    console.log(product_cnt[clicked_id].product_img);
+    prod_img.src = product_cnt[clicked_id].product_img;
+
 
     var closebtn = document.querySelector(".close-btn");
 
