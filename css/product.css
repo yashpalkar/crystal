@@ -29,8 +29,10 @@
 /* click to show======================== */
 
 .product-content {
-  width: 100%;
+  width: 45%;
   align-items: center;
+  height: 125px;
+  margin: 0 10px 0 10px;
 }
 
 .productContainer {
@@ -43,6 +45,7 @@
   width: 100%;
   border-radius: 15px;
   background-color: #e7e7e7;
+  height: 80px;
 }
 
 .productContainer .img-fig {
@@ -89,10 +92,15 @@
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   .productContainer img {
     width: 100px;
   }
+  .product-content {
+  width: 100%;
+}
+
+
 
 }
 
@@ -253,6 +261,12 @@
   font-size: 16px;
   margin: 10px;
 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* #grid {

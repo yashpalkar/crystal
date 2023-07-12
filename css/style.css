@@ -1,7 +1,7 @@
-/* font-family: 'Lora', serif;
+font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
-font-family: 'Playfair Display SC', serif; */
+font-family: 'Playfair Display SC', serif;
 
 :root {
   --primary-color: #2596be;
@@ -14,7 +14,7 @@ font-family: 'Playfair Display SC', serif; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lora', serif;
+  font-family: 'Playfair', serif;
 }
 
 /* wrappper here============================================== */
@@ -151,6 +151,14 @@ header {
   animation: slideUp 3s ease-in-out forwards;
   display: inline-block;
 }
+  .banner-btn a{
+  /* margin: 0 20px 0 20px; */
+  color: #2596be;
+  }
+    .banner-btn a:hover{
+  /* margin: 0 20px 0 20px; */
+  background-color: #2596be;
+  }
 
 
 @keyframes slideDown {
@@ -264,7 +272,7 @@ header {
 }
 
 .aboutUsList span::before {
-  font-family: "fontAwesome";
+  font-family: "Playfair";
   padding-right: 10px;
   color: var(--primary-color);
   text-indent: 0;
@@ -283,6 +291,7 @@ header {
 /* contact start here================================================ */
 #contact {
   background-color: #eee;
+  /* background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/product_background.png); */
   padding: 50px;
 }
 
@@ -313,6 +322,7 @@ header {
   line-height: 2;
   display: block;
   width: 40%;
+  color: var(--black-charcoal);
 }
 
 .footerBottom span {
@@ -320,7 +330,7 @@ header {
 }
 
 .footerBottom span::before {
-  font-family: "fontAwesome";
+  font-family: "Playfair";
   text-indent: 0;
   padding-right: 10px;
 }
@@ -603,6 +613,7 @@ header {
   .banner-btn {
     bottom: 25%;
   }
+
 
   .banner-content a {
     display: block;
