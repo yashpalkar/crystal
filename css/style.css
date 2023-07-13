@@ -1,7 +1,7 @@
-font-family: 'Lora', serif;
+/* font-family: 'Lora', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
-font-family: 'Playfair Display SC', serif;
+font-family: 'Playfair Display SC', serif; */
 
 :root {
   --primary-color: #2596be;
@@ -34,7 +34,7 @@ h2 {
 header {
   padding: 10px 0;
   background-color: #fff;
-  position: sticky;
+  position: sticky !important;
   top: 0;
   z-index: 1;
 }
@@ -147,19 +147,45 @@ header {
 
 .banner-btn {
   position: absolute;
-  bottom: 30%;
+  bottom: 35%;
   animation: slideUp 3s ease-in-out forwards;
   display: inline-block;
 }
-  .banner-btn a{
-  /* margin: 0 20px 0 20px; */
-  color: #2596be;
-  }
-    .banner-btn a:hover{
-  /* margin: 0 20px 0 20px; */
-  background-color: #2596be;
-  }
+.banner-content{
+  color: #fff;
+}
 
+.banner-btn a {
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 20px 0;
+  /* color: #2596be; */
+  display: block;
+  background-color: #fff;
+  width: 120%;
+  border-radius:0 0 20px 0;
+
+}
+
+.banner-btn a::after{
+  content: "\f178";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  float: right;
+  padding:0 10px 0 0;
+}
+
+.banner-btn a:hover{
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 0 20px 0 0;
+  width: 130%;
+  transition: all .8s ease-out;
+}
 
 @keyframes slideDown {
   0% {
@@ -189,17 +215,8 @@ header {
   }
 }
 
-.banner-content a {
-  padding: 10px;
-  border: 1px solid #fff;
-  text-decoration: none;
-  font-size: 12px;
-}
 
-.banner-content,
-.banner-content a {
-  color: #fff;
-}
+
 
 /* banner section end here=========================================== */
 
@@ -272,7 +289,7 @@ header {
 }
 
 .aboutUsList span::before {
-  font-family: "Playfair";
+  font-family: "fontAwesome";
   padding-right: 10px;
   color: var(--primary-color);
   text-indent: 0;
@@ -330,7 +347,7 @@ header {
 }
 
 .footerBottom span::before {
-  font-family: "Playfair";
+  font-family: "fontAwesome";
   text-indent: 0;
   padding-right: 10px;
 }
@@ -403,8 +420,7 @@ header {
 
   /* contact */
   #contact {
-    padding: 50px 0;
-
+    padding: 80px 0;
   }
 }
 
@@ -431,7 +447,6 @@ header {
   }
 
   .navbar-collapse {
-
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -553,7 +568,7 @@ header {
     }
 
     100% {
-      top: 0%;
+      bottom: 50%;
       opacity: 1;
       transform: translateY(85%);
     }
@@ -569,18 +584,13 @@ header {
     font-size: 25px;
   }
 
+  .banner-btn {
+    bottom: 45% !important;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  .banner-content {
-    top: 20%;
-  }
 
-
-  .banner-content a {
-    margin-bottom: 10px;
-
-  }
 
   @keyframes slideDown {
     0% {
@@ -604,24 +614,24 @@ header {
     }
 
     100% {
-      top: 0%;
+      bottom: 0%;
       opacity: 1;
       transform: translateY(95%);
     }
   }
 
-  .banner-btn {
-    bottom: 25%;
-  }
 
 
-  .banner-content a {
-    display: block;
-  }
 
   .aboutUs img {
     height: 150px;
   }
 }
 
+
+@media screen and (max-width: 280px) {
+    .banner-btn {
+    bottom: 35% !important;
+  }
+}
 /* responsive end here========================================= */
