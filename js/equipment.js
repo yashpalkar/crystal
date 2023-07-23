@@ -102,13 +102,16 @@ $(function () {
   let cardCount = $(div).find(".cards").children(".card").length;
   let speed = 1000;
   let containerWidth = $(".equipment-container").width();
-  let cardWidth = 250;
-  console.log(cardCount);
+    var width = $(".cards").width();
+  console.log(width);
+  let cardWidth =width;
+
+  // console.log(cardCount);
   var x = window.matchMedia("(max-width: 1200px)");
   // var y = window.matchMedia("(max-width: 850px)");
   if (x.matches) {
     // If media query matches
-    cardWidth = 600;
+    cardWidth = width;
     // console.log(cardWidth);
   }
 
@@ -116,7 +119,7 @@ $(function () {
 
   //Remove scrollbars
   $("#slide-right-container").click(function (e) {
-    if ($(div).scrollLeft() + containerWidth < cardCount * cardWidth) {
+    if ($(div).scrollLeft() + containerWidth < cardCount+100 * cardWidth) {
       $(div).animate(
         {
           scrollLeft: $(div).scrollLeft() + cardWidth,
