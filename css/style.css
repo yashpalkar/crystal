@@ -29,7 +29,7 @@ h2 {
   font-size: 35px;
 }
 /* header start here=========================================== */
-header {
+header  {
   background-color: #fff;
   position: sticky !important;
   top: 0;
@@ -53,6 +53,7 @@ header {
 }
 .address p{
   font-size: 13px;
+      margin: 5px;
 }
 .headerTop .address {
   border-right: 1px solid var(--black-charcoal);
