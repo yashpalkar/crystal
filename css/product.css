@@ -11,7 +11,7 @@
 .product {
   text-align: center;
   text-align: -webkit-center;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .product h2 {
@@ -361,4 +361,10 @@
   .custom-model-inner {
     margin-top: 45px;
   }
+}
+@media screen and (max-width:520px) {
+  /* .product-content{
+  }
+  .product-content img {
+    width: 300px;} */
 }

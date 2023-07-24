@@ -28,6 +28,10 @@ font-family: 'Playfair Display SC', serif; */
 h2 {
   font-size: 35px;
 }
+
+#home,#aboutUs,#product,#equipment,#contact{
+  position: relative !important;
+}
 /* header start here=========================================== */
 header  {
   background-color: #fff;
@@ -44,6 +48,10 @@ header  {
 
 .headerTop {
   padding: 5px 0;
+}
+.headerTop .wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 
 .headerTop p,
@@ -101,6 +109,9 @@ header  {
 
 .navbar-brand img {
   width: 150px;
+}
+.nav-brand{
+  display: none;
 }
 
 .navbar-collapse {
@@ -555,13 +566,44 @@ header  {
 }
 
 @media screen and (max-width: 768px) {
+  .navbar-brand img {
+    display: none;
+  }
+  .nav-brand{
+    display: block;
+  }
+  .nav-brand img{
+    width: 150px;
+  }
+  .socialMedia {
+    width: 100%;
+  }
+  .socialMedia ul{
+    justify-content: right;
+  }
+#home,#aboutUs,#equipment,#contact{
+  padding: 120px 0 0 0 !important;
+}
+#product{
+  padding: 20px 0 0 0 !important;
+}
+
+
+.navbar .headerBottom .wrapper{
+  /* justify-content: right; */
+}
+.socialMedia{
+  padding: 0 10px;
+}
+
+
   header {
     position: relative;
   }
 
   .navbar-collapse {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     position: absolute;
     background-color: #fff;
     top: 100%;
@@ -661,6 +703,10 @@ header  {
 }
 
 @media screen and (max-width: 580px) {
+
+  .headerTop .mailUs a {
+    display: inline-block;
+   }
   .headerTop .address {
     border: none;
     border-bottom: 1px solid var(--black-charcoal);
@@ -668,6 +714,7 @@ header  {
   }
   .mailUs{
     padding-top: 10px;
+    text-align: center;
   }
   .addAndMail{
     width: 100%;
@@ -719,6 +766,9 @@ header  {
 
 @media screen and (max-width: 320px) {
 
+  .nav-brand img{
+    width: 100px;
+  }
 
   @keyframes slideDown {
     0% {
