@@ -8,6 +8,22 @@ const toggleNavbr = () => {
 
 nav_header.addEventListener("click", () => toggleNavbr());
 
+
+// navbar logo
+
+function showLogo() {
+  document.querySelector(".nav-brand").style.display = "block";
+  document.querySelector(".navbar-brand").style.display = "none";
+  document.querySelector(".addAndMail").style.width = "100%";
+  // document.querySelector(".mailUs p").style.display = "flex";
+  // document.querySelector(".mailUs p").style.flexWrap = "wrap";
+  document.querySelector(".addAndMail").style.justifyContent = "center";
+  document.querySelector(".headerBottom").style.padding = "0";
+  document.querySelector(".headerTop").style.padding = "0";
+  document.querySelector(".address p").style.fontSize = "12px";
+  document.querySelector(".mailUs p").style.fontSize = "12px";
+}
+
 // navbar end menu ========================================
 
 var product_cnt = [
