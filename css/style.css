@@ -29,18 +29,33 @@ h2 {
   font-size: 35px;
 }
 
-#home,#aboutUs,#product,#equipment,#contact{
+#home,
+#aboutUs,
+#product,
+#equipment,
+#contact {
   position: relative !important;
 }
+
+#aboutUs,
+#equipment,
+#contact {
+  padding: 110px 0 0 0 !important;
+}
+
+#product {
+  padding: 10px 0 0 0 !important;
+}
+
 /* header start here=========================================== */
-header  {
+header {
   background-color: #fff;
   position: sticky !important;
   top: 0;
   z-index: 1;
 }
 
-.addAndMail{
+.addAndMail {
   display: flex;
   align-items: center;
   width: 60%;
@@ -49,7 +64,8 @@ header  {
 .headerTop {
   padding: 5px 0;
 }
-.headerTop .wrapper{
+
+.headerTop .wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -59,10 +75,16 @@ header  {
 .headerTop .mailUs::before {
   color: #555;
 }
-.address p{
+
+.address p,
+.mailUs p {
   font-size: 13px;
-      margin: 5px;
 }
+
+.address p {
+  margin: 5px;
+}
+
 .headerTop .address {
   border-right: 1px solid var(--black-charcoal);
   display: flex;
@@ -85,9 +107,8 @@ header  {
 .headerTop .mailUs a {
   display: block;
   text-decoration: none;
-  padding: 3px 0;
+  padding: 3px 10px;
   color: var(--primary-color);
-  padding: 0 10px;
 }
 
 .headerTop .mailUs a::before {
@@ -110,7 +131,14 @@ header  {
 .navbar-brand img {
   width: 150px;
 }
-.nav-brand{
+
+.nav-brand img {
+  width: 100px;
+}
+
+
+
+.nav-brand {
   display: none;
 }
 
@@ -526,6 +554,16 @@ header  {
 
 /* responsive start here======================================= */
 @media screen and (max-width: 1115px) {
+
+  #aboutUs,
+  #equipment {
+    padding: 120px 0 0 0 !important;
+  }
+
+  #product {
+    padding: 20px 0 0 0 !important;
+  }
+
   .addAndMail,
   .navbar-collapse,
   .banner-text {
@@ -551,14 +589,9 @@ header  {
 } */
 
 @media screen and (max-width: 885px) {
-  .headerTop .wrapper {
+  /* .headerTop .wrapper {
     flex-direction: column;
-  }
-
-  .addAndMail{
-    width: 100%;
-    padding: 10px 0;
-  }
+  } */
 
   #aboutUs .wrapper {
     padding: 0;
@@ -567,34 +600,30 @@ header  {
 
 @media screen and (max-width: 768px) {
   .navbar-brand img {
-    display: none;
+    display: none !important;
   }
-  .nav-brand{
-    display: block;
+
+  .nav-brand {
+    display: block !important;
   }
-  .nav-brand img{
-    width: 150px;
-  }
-  .socialMedia {
+
+  .socialMedia,
+  .addAndMail {
     width: 100%;
   }
-  .socialMedia ul{
+
+  .socialMedia ul {
     justify-content: right;
   }
-#home,#aboutUs,#equipment,#contact{
-  padding: 120px 0 0 0 !important;
-}
-#product{
-  padding: 20px 0 0 0 !important;
-}
 
 
-.navbar .headerBottom .wrapper{
-  /* justify-content: right; */
-}
-.socialMedia{
-  padding: 0 10px;
-}
+  /* .navbar .headerBottom .wrapper {
+    justify-content: right;
+  } */
+
+  .socialMedia {
+    padding: 0 10px;
+  }
 
 
   header {
@@ -703,20 +732,32 @@ header  {
 }
 
 @media screen and (max-width: 580px) {
+  /* #home,
+  #aboutUs,
+#equipment,
+#contact{
+  padding: 170px 0 0 0 !important;
+}
+#product{
+  padding: 70px 0 0 0 !important;
+} */
 
   .headerTop .mailUs a {
     display: inline-block;
-   }
+  }
+
   .headerTop .address {
     border: none;
     border-bottom: 1px solid var(--black-charcoal);
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
   }
-  .mailUs{
-    padding-top: 10px;
+
+  .mailUs {
+    /* padding-top: 10px; */
     text-align: center;
   }
-  .addAndMail{
+
+  .addAndMail {
     width: 100%;
     flex-direction: column;
   }
@@ -755,6 +796,36 @@ header  {
 }
 
 @media screen and (max-width: 480px) {
+
+  .headerTop .mailUs a {
+    padding: 0;
+  }
+
+  .headerTop .address::before {
+    font-size: 20px !important;
+
+  }
+
+  .headerTop .mailUs a::before,
+  .headerTop .address::before {
+    font-size: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* .address p,.mailUs p {
+    font-size: 11px;
+  } */
+  #aboutUs,
+  #equipment,
+  #contact {
+    padding: 140px 0 0 0 !important;
+  }
+
+  #product {
+    padding: 40px 0 0 0 !important;
+  }
+
   h2 {
     font-size: 25px;
   }
@@ -766,7 +837,18 @@ header  {
 
 @media screen and (max-width: 320px) {
 
-  .nav-brand img{
+  #home,
+  #aboutUs,
+  #equipment,
+  #contact {
+    padding: 150px 0 0 0 !important;
+  }
+
+  #product {
+    padding: 50px 0 0 0 !important;
+  }
+
+  .nav-brand img {
     width: 100px;
   }
 
