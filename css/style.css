@@ -4,7 +4,7 @@ font-family: 'Playfair Display', serif;
 font-family: 'Playfair Display SC', serif; */
 
 :root {
-  --primary-color: #2596be;
+  --primary-color: #008DD2;
   --black-charcoal: #36454F;
   /* Red */
 }
@@ -174,7 +174,7 @@ header {
 .nav-item a.active {
   border-bottom: 2px solid var(--primary-color);
   padding: 5px 0;
-  color: #2ab3e6 !important;
+  color:var(--primary-color) !important;
 }
 
 .socialMedia li {
@@ -182,7 +182,7 @@ header {
 }
 
 .socialMedia a:hover {
-  color: #2ab3e6 !important;
+  color: var(--primary-color) !important;
 }
 
 .socialMedia a {
