@@ -252,7 +252,7 @@ header {
 
   0%,
   100% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../assets/images/aluminum-tanks-storage-raw-materials-chemical-industry-sterile-conditions-enterprise.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/aluminum-tanks-storage-raw-materials-chemical-industry-sterile-conditions-enterprise.jpg");
 
   }
 
@@ -261,7 +261,7 @@ header {
   }
 
   50% {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../assets/images/pharmaceutical-factory-man-worker-protective-clothing-operate-production-line-sterile-working-conditions.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/images/pharmaceutical-factory-man-worker-protective-clothing-operate-production-line-sterile-working-conditions.jpg");
   }
 
   75% {
