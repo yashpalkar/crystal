@@ -55,11 +55,11 @@ header {
   z-index: 1;
 }
 
-.addAndMail {
+/* .addAndMail {
   display: flex;
   align-items: center;
   width: 60%;
-}
+} */
 
 .headerTop {
   padding: 5px 0;
@@ -99,10 +99,10 @@ header {
   text-indent: 0;
 }
 
-/* .headerTop .mailUs{
+.headerTop .mailUs{
   display: flex;
   align-items: center;
-} */
+}
 
 .headerTop .mailUs a {
   display: block;
@@ -565,7 +565,7 @@ header {
     padding: 20px 0 0 0 !important;
   }
 
-  .addAndMail,
+  /* .addAndMail, */
   .navbar-collapse,
   .banner-text {
     width: 70%;
@@ -608,8 +608,17 @@ header {
     display: block !important;
   }
 
-  .socialMedia,
-  .addAndMail {
+  .headerTop .mailUs a {
+    display: inline-block;
+  }
+
+  .addAndMail{
+    justify-content: center;
+    display: flex;
+  }
+
+  .addAndMail,
+  .socialMedia{
     width: 100%;
   }
 
@@ -743,9 +752,7 @@ header {
   padding: 70px 0 0 0 !important;
 } */
 
-  .headerTop .mailUs a {
-    display: inline-block;
-  }
+
 
   .headerTop .address {
     border: none;
@@ -758,10 +765,10 @@ header {
     text-align: center;
   }
 
-  .addAndMail {
+  /* .addAndMail {
     width: 100%;
     flex-direction: column;
-  }
+  } */
 
   @keyframes slideDown {
     0% {
@@ -799,7 +806,7 @@ header {
 @media screen and (max-width: 480px) {
 
   .headerTop .mailUs a {
-    padding: 0;
+    padding: 0 5px;
   }
 
   .headerTop .address::before {
