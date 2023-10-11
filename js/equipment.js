@@ -48,7 +48,7 @@ const cardEquipmentList = [
   {
     equipment_content:
       "Made in SS 304 / 316 / 316L hepa Filter 0.3 micron, Fine Filter 5 micron double Shaft Motor Blower, 1.0/0.5 H.P, 2800 R.P.M, 230 volt, 1 Phase magnehlic Gauge 0‐25 mm SS 304 DOP Port for PAO test Perforated Shelf in Internal Area or SS hanger Arrangement SS Handle for Door UV Light 5‐18 watt with hour mete Electrical Supply 230V AC 1‐Phase.",
-    image: "assets/images/static_passbox.png",
+    image: "assets/images/Sterile_Garment_Storage_Cabinet.png",
     equipment_name: "Sterile Garment Storage Cabinet",
   },
   // { equipment_content: "",image: "assets/images/static_passbox.png",equipment_name: "Static PassBox"},
