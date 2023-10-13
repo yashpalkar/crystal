@@ -408,7 +408,7 @@ header {
 
 .aboutUs {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   padding: 50px 0;
 }
@@ -843,6 +843,10 @@ header {
 
   .banner-btn {
     bottom: 45% !important;
+  }
+
+  .aboutUsImg img {
+    height: 200px;
   }
 }
 
