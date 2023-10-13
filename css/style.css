@@ -439,16 +439,19 @@ header {
 .aboutUsList span::before {
   font-family: "fontAwesome";
   padding-right: 10px;
-  color: var(--primary-color);
   text-indent: 0;
 }
 
 .aboutUsList #vision::before {
   content: '\f2da';
+  color: red;
+
 }
 
 .aboutUsList #mission::before {
   content: '\f2da';
+  color: var(--primary-color);
+
 }
 
 /* about section end here=========================================== */
