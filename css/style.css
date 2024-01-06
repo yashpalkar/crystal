@@ -15,6 +15,7 @@ font-family: 'Playfair Display SC', serif; */
   padding: 0;
   box-sizing: border-box;
   font-family: 'Playfair', serif;
+  
 }
 
 /* wrappper here============================================== */
@@ -22,6 +23,7 @@ font-family: 'Playfair Display SC', serif; */
   width: 90%;
   max-width: 1365px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 /* all similar tags here======================== */
@@ -52,7 +54,7 @@ header {
   background-color: #fff;
   position: sticky !important;
   top: 0;
-  z-index: 1;
+  z-index: 8;
 }
 
 /* .addAndMail {
